@@ -50,8 +50,8 @@ tests_require = [
 ]
 
 setuptools.setup(
-    name="jupyter-matlab-proxy",
-    version="0.2.3",
+    name="abc-def-ghi-jki-jupy-t",
+    version="0.2.4",
     url="https://github.com/abcd/def",
     author="",
     author_email="abc@gmail.com",
