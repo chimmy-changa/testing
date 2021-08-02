@@ -51,7 +51,7 @@ tests_require = [
 
 setuptools.setup(
     name="jupyter-matlab-proxy",
-    version="0.2.0",
+    version="0.2.1",
     url="https://github.com/abcd/def",
     author="",
     author_email="abcdef",
