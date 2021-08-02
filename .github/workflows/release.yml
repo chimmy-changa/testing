@@ -88,5 +88,5 @@ jobs:
         with:
           user: __token__
           verbose: true
-          password: ${{ secrets.MWI_PYPI_TOKEN }}
+          password: ${{ secrets.PYPI_TOKEN }}
           repository_url: https://upload.pypi.org/legacy/
