@@ -50,7 +50,7 @@ tests_require = [
 ]
 
 setuptools.setup(
-    name="abc-def-ghi-jki-jupy-t",
+    name="dummy-gg",
     version="0.2.4",
     url="https://github.com/abcd/def",
     author="",
