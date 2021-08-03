@@ -32,7 +32,6 @@ jobs:
 
       - name: Upload Javscript coverage report to Codecov 
         uses: codecov/codecov-action@v2
-        uses: codecov/codecov-action@v2
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           directory: ./gui/coverage/lcov-report/
