@@ -49,13 +49,13 @@ HERE = Path(__file__).parent.resolve()
 long_description = (HERE / "README.md").read_text()
 
 setuptools.setup(
-    name="jupyter-matlab-proxy",
-    version="0.3.1",
-    url="https://github.com/mathworks/jupyter-matlab-proxy",
-    author="The MathWorks, Inc.",
-    author_email="jupyter-support@mathworks.com",
-    license="MATHWORKS CLOUD REFERENCE ARCHITECTURE LICENSE",
-    description="Jupyter extension to proxy MATLAB JavaScript Desktop",
+    name="dummy-gg",
+    version="0.3.2",
+    url="https://github.com/abc/def",
+    author="bla bla bla",
+    author_email="abc@gmail.com",
+    license="abc def",
+    description="abbb ddeeeffee",
     long_description=long_description,
     long_description_content_type="text/markdown",
     packages=setuptools.find_packages(exclude=["devel", "tests"]),
