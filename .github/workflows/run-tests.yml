@@ -78,6 +78,7 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           directory: ./
+          name: Python-codecov
           files: ./coverage.xml
           fail_ci_if_error: true
           verbose: true
