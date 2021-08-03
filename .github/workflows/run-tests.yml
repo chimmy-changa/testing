@@ -68,15 +68,15 @@ jobs:
         run: |
           pytest --cov=./ --cov-report=xml
           
-    - name: Upload python coverage report to Codecov 
-        uses: codecov/codecov-action@v2
-        with:
-          # token: ${{ secrets.CODECOV_TOKEN }}
-          directory: ./
-          name: Python-codecov
-          files: ./coverage.xml
-          fail_ci_if_error: true
-          verbose: true
+      - name: Upload python coverage report to Codecov 
+          uses: codecov/codecov-action@v2
+          with:
+            # token: ${{ secrets.CODECOV_TOKEN }}
+            directory: ./
+            name: Python-codecov
+            files: ./coverage.xml
+            fail_ci_if_error: true
+            verbose: true
         
  
 
