@@ -25,7 +25,7 @@ jobs:
         run: npm --prefix gui build --if-present
 
       - name: Run Node tests and generating code coverage.
-        run: npm --prefix test -- --coverage --watchAll=false
+        run: npm --prefix gui test -- --coverage --watchAll=false
 
       # - name: Generate Code Coverage report for Javascript Code
       #   run: npm --prefix test -- --coverage --watchAll=false
