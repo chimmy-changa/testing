@@ -1,4 +1,6 @@
 # MATLAB Integration for Jupyter
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/mathworks/jupyter-matlab-proxy/MATLAB%20Jupyter%20Integration?logo=github)](https://github.com/mathworks/jupyter-matlab-proxy/actions)
+[![PyPI badge](https://img.shields.io/pypi/v/jupyter-matlab-proxy.svg?logo=pypi)](https://pypi.python.org/pypi/jupyter-matlab-proxy)
 
 The `jupyter-matlab-proxy` Python® package allows you to integrate MATLAB® with Jupyter®. The MATLAB integration for Jupyter enables you to open a MATLAB desktop in a web browser tab, directly from your Jupyter environment. This is not a kernel integration.
 
@@ -17,7 +19,7 @@ Once you have a Jupyter environment with the `jupyter-matlab-proxy` package inst
   <img width="600" src="img/combined_launchers.png">
 </p>
 
-3. If prompted to do so, enter credentials for a MathWorks account associated with a MATLAB license. If you are using a network license manager, change to the _Network License Manager_ tab and enter the license server address instead. To determine the appropriate method for your license type, consult [MATLAB Licensing Info](./MATLAB_Licensing_Info.md).
+3. If prompted to do so, enter credentials for a MathWorks account associated with a MATLAB license. If you are using a network license manager, change to the _Network License Manager_ tab and enter the license server address instead. To determine the appropriate method for your license type, consult [MATLAB Licensing Info](./MATLAB-Licensing-Info.md).
 
 <p align="center">
   <img width="400" src="img/licensing_GUI.png">

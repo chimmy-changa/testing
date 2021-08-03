@@ -1,9 +1,5 @@
 # Copyright 2020-2021 The MathWorks, Inc.
-
-import json
 import os
-from setuptools.command.build_py import build_py
-from setuptools.command.sdist import sdist
 from setuptools.command.install import install
 import setuptools
 from pathlib import Path
@@ -49,14 +45,19 @@ tests_require = [
     "aioresponses",
 ]
 
+HERE = Path(__file__).parent.resolve()
+long_description = (HERE / "README.md").read_text()
+
 setuptools.setup(
     name="dummy-gg",
-    version="0.2.4",
-    url="https://github.com/abcd/deef",
-    author="",
+    version="0.3.2",
+    url="https://github.com/abc/def",
+    author="bla bla bla",
     author_email="abc@gmail.com",
-    license="NNNNNNNN",
-    description="NNNNNNNNNNNNNNNNN",
+    license="abc def",
+    description="abbb ddeeeffee",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     packages=setuptools.find_packages(exclude=["devel", "tests"]),
     keywords=["Jupyter"],
     classifiers=["Framework :: Jupyter"],
