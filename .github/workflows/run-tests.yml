@@ -115,8 +115,8 @@ jobs:
       - name: Generate code coverage for Javascript code
         run: npm --prefix gui test -- --coverage --watchAll=false
 
-      - name: Run node tests
-        run: npm --prefix gui test -- --coverage --watchAll=false
+      # - name: Run node tests
+      #   run: npm --prefix gui test -- --coverage --watchAll=false
 
       - name: Upload Javscript coverage report to Codecov
         uses: codecov/codecov-action@v2
