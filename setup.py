@@ -52,7 +52,7 @@ tests_require = [
 setuptools.setup(
     name="dummy-gg",
     version="0.2.4",
-    url="https://github.com/abcd/def",
+    url="https://github.com/abcd/deef",
     author="",
     author_email="abc@gmail.com",
     license="NNNNNNNN",
