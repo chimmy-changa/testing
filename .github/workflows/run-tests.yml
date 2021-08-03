@@ -27,12 +27,12 @@ jobs:
       - name: Run Node tests and generating code coverage.
         run: npm --prefix gui test -- --coverage --watchAll=false
 
-      # - name: Upload Javscript coverage report to Codecov
-      #   uses: codecov/codecov-action@v2
-      #   with:
-      #     directory: ./gui/coverage/
-      #     fail_ci_if_error: true
-      #     verbose: true
+      - name: Upload Javscript coverage report to Codecov
+        uses: codecov/codecov-action@v2
+        with:
+          directory: ./gui/coverage/
+          fail_ci_if_error: true
+          verbose: true
 
   python_tests:
     runs-on: ubuntu-latest
