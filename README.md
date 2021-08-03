@@ -1,7 +1,7 @@
 # MATLAB Integration for Jupyter
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/mathworks/jupyter-matlab-proxy/MATLAB%20Jupyter%20Integration?logo=github)](https://github.com/mathworks/jupyter-matlab-proxy/actions)
 [![PyPI badge](https://img.shields.io/pypi/v/jupyter-matlab-proxy.svg?logo=pypi)](https://pypi.python.org/pypi/jupyter-matlab-proxy)
-[![codecov](https://codecov.io/gh/chimmy-changa/testing/branch/main/graph/badge.svg?token=QQAGJWT5W8)](https://codecov.io/gh/chimmy-changa/testing)
+[![Python + JS Codecov](https://codecov.io/gh/chimmy-changa/testing/branch/main/graph/badge.svg?token=QQAGJWT5W8)](https://codecov.io/gh/chimmy-changa/testing)
 
 The `jupyter-matlab-proxy` Python® package allows you to integrate MATLAB® with Jupyter®. The MATLAB integration for Jupyter enables you to open a MATLAB desktop in a web browser tab, directly from your Jupyter environment. This is not a kernel integration.
 
@@ -16,9 +16,13 @@ Once you have a Jupyter environment with the `jupyter-matlab-proxy` package inst
 
 2. If you are using Jupyter Notebook (on the left in figure below), on the `New` menu, select `MATLAB`. If you are using JupyterLab (on the right in figure below), select the MATLAB icon on the launcher.
 
-<p align="center">
+<!-- <p align="center">
   <img width="600" src="img/combined_launchers.png">
-</p>
+</p> -->
+
+![combined_images](https://github.com/chimmy-changa/testing/raw/main/img/combined_launchers.png)
+
+
 
 3. If prompted to do so, enter credentials for a MathWorks account associated with a MATLAB license. If you are using a network license manager, change to the _Network License Manager_ tab and enter the license server address instead. To determine the appropriate method for your license type, consult [MATLAB Licensing Info](./MATLAB-Licensing-Info.md).
 
