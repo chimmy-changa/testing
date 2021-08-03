@@ -8,3 +8,4 @@ dist/
 htmlcov/
 .coverage
 jupyter_matlab_proxy/gui/
+coverage/

@@ -24,8 +24,22 @@ jobs:
       - name: Build Project
         run: npm --prefix gui build --if-present
 
-      - name: Run Node tests
-        run: npm --prefix gui test
+      - name: Run Node tests and generating code coverage.
+        run: npm --prefix test -- --coverage --watchAll=false
+
+      # - name: Generate Code Coverage report for Javascript Code
+      #   run: npm --prefix test -- --coverage --watchAll=false
+
+      - name: Upload Javscript coverage report to Codecov 
+        uses: codecov/codecov-action@v2
+        uses: codecov/codecov-action@v2
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          directory: ./gui/coverage/lcov-report/
+          files: ./index.html
+          fail_ci_if_error: true
+          verbose: true
+        
 
   python_tests:
     runs-on: ubuntu-latest
@@ -42,10 +56,11 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: Install dependencies
+      - name: Install dependencies 
         run: |
           python -m pip install --upgrade pip
-          pip install black pytest
+          pip install -e .[DEV]
+          pip install black
 
       - name: Lint with black
         run: |
@@ -54,3 +69,19 @@ jobs:
       - name: Test with pytest
         run: |
           python setup.py test
+          
+      - name: Generate Code Coverage report for Python code
+        run: |
+          pytest --cov=./ --cov-report=xml
+          
+      - name: Upload python coverage report to Codecov 
+        uses: codecov/codecov-action@v2
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          directory: ./
+          files: ./coverage.xml
+          fail_ci_if_error: true
+          verbose: true
+        
+          
+          
