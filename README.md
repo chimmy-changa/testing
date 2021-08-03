@@ -1,7 +1,9 @@
 # MATLAB Integration for Jupyter
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/mathworks/jupyter-matlab-proxy/MATLAB%20Jupyter%20Integration?logo=github)](https://github.com/mathworks/jupyter-matlab-proxy/actions)
 [![PyPI badge](https://img.shields.io/pypi/v/jupyter-matlab-proxy.svg?logo=pypi)](https://pypi.python.org/pypi/jupyter-matlab-proxy)
-[![Python + JS Codecov](https://codecov.io/gh/chimmy-changa/testing/branch/main/graph/badge.svg?token=QQAGJWT5W8)](https://img.shields.io/codecov/c/github/chimmy-changa/testing?label=Python%2BJS%20CodeCov)
+<!-- [![Python + JS Codecov](https://codecov.io/gh/chimmy-changa/testing/branch/main/graph/badge.svg?token=QQAGJWT5W8)](https://img.shields.io/codecov/c/github/chimmy-changa/testing?label=Python%2BJS%20CodeCov) -->
+
+![Codecov](https://img.shields.io/codecov/c/github/chimmy-changa/testing?label=Python%2BJS%20CodeCov)
 
 
 
@@ -28,23 +30,30 @@ Once you have a Jupyter environment with the `jupyter-matlab-proxy` package inst
 
 3. If prompted to do so, enter credentials for a MathWorks account associated with a MATLAB license. If you are using a network license manager, change to the _Network License Manager_ tab and enter the license server address instead. To determine the appropriate method for your license type, consult [MATLAB Licensing Info](./MATLAB-Licensing-Info.md).
 
-<p align="center">
+<!-- <p align="center">
   <img width="400" src="img/licensing_GUI.png">
-</p>
+</p> -->
+
+![licensing_GUI](https://github.com/chimmy-changa/testing/raw/main/img/licensing_GUI.png)
 
 4. Wait for the MATLAB session to start. This can take several minutes.
 
 5. To manage the MATLAB integration for Jupyter, click the tools icon shown below.
 
-<p align="center">
+<!-- <p align="center">
   <img width="100" src="img/tools_icon.png">
-</p>
+</p> -->
+
+![tools_icon](https://github.com/chimmy-changa/testing/raw/main/img/tools_icon.png)
 
 6. Clicking the tools icon opens a status panel with buttons like the ones below:
 
-    <p align="center">
+    <!-- <p align="center">
       <img width="800" src="img/status_panel.png">
-    </p>
+    </p> -->
+
+![status_panel](https://github.com/chimmy-changa/testing/raw/main/img/status_panel.png)
+
 
    The following options are available in the status panel (some options are only available in a specific context):
 
