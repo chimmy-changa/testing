@@ -50,7 +50,7 @@ long_description = (HERE / "README.md").read_text()
 
 setuptools.setup(
     name="dummy-gg",
-    version="0.3.5",
+    version="0.3.6",
     url="https://github.com/abc/def",
     author="bla bla bla",
     author_email="abc@gmail.com",
